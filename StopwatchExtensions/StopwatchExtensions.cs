@@ -6,7 +6,7 @@ namespace StopwatchExtensions
     public static class StopwatchExtensions
     {
         /// <summary>
-        /// Measures the time to invoke and execute <paramref name="func"/>.
+        /// Measures the time to execute <paramref name="func"/>.
         /// </summary>
         /// <param name="stopwatch">This Stopwatch.</param>
         /// <param name="func">A System.Func<T>.</param>
@@ -19,10 +19,10 @@ namespace StopwatchExtensions
         }
 
         /// <summary>
-        /// Measures the time to invoke and execute <paramref name="action"/>.
+        /// Measures the time to execute <paramref name="action"/>.
         /// </summary>
-        /// <param name="stopwatch">This Stopwatch</param>
-        /// <param name="action">A System.Action</param>
+        /// <param name="stopwatch">This Stopwatch.</param>
+        /// <param name="action">A System.Action.</param>
         /// <returns>Timespan elapsed by this instance.</returns>
         static public TimeSpan Time(this Stopwatch stopwatch, System.Action action)
         {
